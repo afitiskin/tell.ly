@@ -88,7 +88,7 @@ H1 {
     color:#434343;
     font:700 45px/40px "Helvetica", Arial, sans-serif;
     letter-spacing:-.03em;
-    padding:20px 0 10px;
+    padding:20px 0 15px;
 }
 
 H2 {
@@ -527,6 +527,7 @@ A:hover {text-decoration:none}
     box-shadow: 0 1px 5px #ccc;
     behavior: url(style/PIE.htc);
 }
+.content_nopadding {padding: 0;}
 
 .content.dark {
     background:#666!important;
@@ -542,7 +543,7 @@ A:hover {text-decoration:none}
 .content .head {
     text-align:center;
     padding:0 0 0;
-    font:19px "Ubuntu", Arial, sans-serif;
+    font:19px/25px "Ubuntu", Arial, sans-serif;
     color:#929292;
 }
 
@@ -1451,3 +1452,92 @@ P.q A {
     height:5px;
     margin:0 9px 0 2px;
 }
+
+
+/* ALEX FITISKIN, 17.04.2012 */
+
+/* downloads page (menu) */
+.b-downloads {width: 100%;height: 91px;border-bottom: 1px solid #c8c8c8;position: relative;}
+.b-downloads {
+	background: #ffffff; /* Old browsers */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2Y3ZjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f7f7f7 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f7f7f7)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* IE10+ */
+	background: linear-gradient(top,  #ffffff 0%,#f7f7f7 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f7f7f7',GradientType=0 ); /* IE6-8 */
+}
+	.b-downloads_shadow {display: block;width: 100%;height: 3px;position: absolute;bottom: -3px;left: 0;}
+	.b-downloads_shadow {
+		background: #ffffff; /* Old browsers */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxZTFlMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: -moz-linear-gradient(top, #e1e1e1 0%, #ffffff 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e1e1), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #e1e1e1 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #e1e1e1 0%,#ffffff 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #e1e1e1 0%,#ffffff 100%); /* IE10+ */
+		background: linear-gradient(top, #e1e1e1 0%,#ffffff 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e1e1', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+	}
+
+	.b-downloads_menu {overflow: hidden;padding: 2px 0;height: 87px;display: block;position: relative;width: 619px;margin: 0 auto;}
+		.b-downloads_menu_sep {display: block;float: left;position: relative;width: 1px;height: 69px;background: #e3e3e3;top: 9px;}
+		.b-downloads_menu_item {display: block;float: left;position: relative;width: 102px;height: 87px;text-align: center;}
+			.b-downloads_menu_item a {display: block;width: 100%;padding: 60px 0 0;position: relative;text-decoration: none;color: #858585;}
+
+			.b-downloads_menu_item_icon {display: block;position: absolute;background: url(../i/sprite.png) no-repeat 0 0;bottom: 28px;left: 50%;}
+
+			.b-downloads_menu_item_macos {}
+				.b-downloads_menu_item_macos .b-downloads_menu_item_icon {width: 26px;height: 29px;background-position: -120px 0;margin: 0 0 0 -13px;}
+					.js-downloads_menu_item_active .b-downloads_menu_item_macos .b-downloads_menu_item_icon {background-position: -146px 0;}
+			.b-downloads_menu_item_iphone {}
+				.b-downloads_menu_item_iphone .b-downloads_menu_item_icon {width: 16px;height: 25px;background-position: 0 0;margin: 0 0 0 -8px;}
+					.js-downloads_menu_item_active .b-downloads_menu_item_iphone .b-downloads_menu_item_icon {background-position: -253px 0;}
+			.b-downloads_menu_item_ipad {}
+				.b-downloads_menu_item_ipad .b-downloads_menu_item_icon {width: 24px;height: 32px;background-position: -16px 0;margin: 0 0 0 -12px;}
+					.js-downloads_menu_item_active .b-downloads_menu_item_ipad .b-downloads_menu_item_icon {background-position: -229px 0;}
+			.b-downloads_menu_item_android {}
+				.b-downloads_menu_item_android .b-downloads_menu_item_icon {width: 23px;height: 28px;background-position: -40px 0;margin: 0 0 0 -11.5px;}
+					.js-downloads_menu_item_active .b-downloads_menu_item_android .b-downloads_menu_item_icon {background-position: -269px 0;}
+			.b-downloads_menu_item_windows {}
+				.b-downloads_menu_item_windows .b-downloads_menu_item_icon {width: 28px;height: 26px;background-position: -63px 0;margin: 0 0 0 -14px;}
+					.js-downloads_menu_item_active  .b-downloads_menu_item_windows .b-downloads_menu_item_icon {background-position: -201px 0;}
+			.b-downloads_menu_item_blackberry {}
+				.b-downloads_menu_item_blackberry .b-downloads_menu_item_icon {width: 29px;height: 25px;background-position: -91px 0;margin: 0 0 0 -14.5px;}
+					.js-downloads_menu_item_active .b-downloads_menu_item_blackberry .b-downloads_menu_item_icon {background-position: -172px 0;}
+
+		.js-downloads_menu_item_active {width: 104px;background: url(../i/downloads-menu-active-bg.png) no-repeat 0 0;}
+	.b-downloads_bg {padding-top: 20px!important;height: 580px;border-radius: 0 0 3px 3px;}
+		.b-downloads_bg_mac {background: url(../i/downloads-mac-bg.png) no-repeat 50% 0;}
+	.b-downloads_screenshot {margin: 10px auto;}
+		.b-downloads_screenshot_mac {background: url(../i/downloads-mac-screenshot.png) no-repeat 0 0;width: 565px;height: 214px;}
+	
+	.b-downloads_buttons {margin: 20px 0;}
+		.b-downloads_buttons a {margin: 0 2px;}
+	
+.b-button {display: inline-block;position: relative;height: 50px;background: url(../i/button-left.png) no-repeat 0 0;padding: 0 0 0 25px;white-space: nowrap;color: #fff;text-decoration: none;line-height: 19px;font-size: 19px;text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);cursor: pointer;}              
+	.b-button i {display: inline-block;position: absolute;top: 9px;left: 12px;opacity: 0.85;}
+		.b-button:hover i {opacity: 1;}
+	.b-button span {display: inline-block;height: 50px;padding: 13px 25px 0 2px;background: url(../i/button-right.png) no-repeat 100% 0;}
+	
+	.b-button-darr {}
+		.b-button-darr span {padding-left: 22px;}
+		.b-button-darr i {width: 27px;height: 29px;background: url(../i/sprite.png) no-repeat -292px 1px;}
+	.b-button-uarr {}
+		.b-button-uarr span {padding-left: 22px;}
+		.b-button-uarr i {width: 27px;height: 29px;background: url(../i/sprite.png) no-repeat -347px 1px;}
+	.b-button-rarr {}
+		.b-button-rarr span {padding-left: 22px;}
+		.b-button-rarr i {width: 27px;height: 29px;background: url(../i/sprite.png) no-repeat -374px 0;}
+	.b-button-larr {}
+		.b-button-larr span {padding-left: 22px;}
+		.b-button-larr i {width: 27px;height: 29px;background: url(../i/sprite.png) no-repeat -319px 0;}
+	.b-button-app {}
+		.b-button-app span {padding-left: 22px;}
+		.b-button-app i {width: 27px;height: 29px;background: url(../i/sprite.png) no-repeat -402px 0;top: 10px;}
+
+
+
+			.js-downloads_menu_item_active a {color: #7fb435;}

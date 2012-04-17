@@ -507,7 +507,24 @@ $(document).ready(function(){
 		$(document).click(dropHide);
 	}
 
-
+	/* ALEX FITISKIN, 17.04.2012. Downloads menu */
+	$('.b-downloads_menu_item').click(function () {
+		var $active = $(this).parent().find('.js-downloads_menu_item_active');
+		$active.prev('.b-downloads_menu_sep').show();
+		$active.next('.b-downloads_menu_sep').show();
+		$active.removeClass('js-downloads_menu_item_active');
+		
+		$(this).prev('.b-downloads_menu_sep').hide();
+		$(this).next('.b-downloads_menu_sep').hide();
+		$(this).addClass('js-downloads_menu_item_active');
+		return false;
+	});
+	if ($('.js-downloads_menu_item_active').get(0)) {
+		$('.js-downloads_menu_item_active').click();
+	} else {
+		$($('.b-downloads_menu_item').get(0)).click();
+	}
+	
 }); // dom ready
 
 // globals for dropdown timeout

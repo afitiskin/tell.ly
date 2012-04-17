@@ -1,4 +1,4 @@
-﻿<!doctype html> 
+<!doctype html> 
 <html> 
 <head>
 	<title>Telly</title>
@@ -11,11 +11,11 @@
 	<script src="j/placeholder-min.js"></script>
 	<script src="j/validation.js"></script>
 	<!--[if IE]><script src="j/placeholder-ie.js"></script><![endif]-->
-    <style>
-    .rates_tbl {margin: 20px auto;}
-.rates_tbl th {font-size: 11px; color: #5e5e5e; border-bottom: #D9D9D9 1px solid; padding: 5px 4px 10px 4px; font-weight: bold; text-align: left;}
-.rates_tbl td {font-size: 12px; border-bottom: #D9D9D9 1px solid; padding: 15px 4px;}
-    </style>
+	<!--[if gte IE 9]>
+  	<style type="text/css">
+    	.g-gradient {filter: none;}
+	</style>
+	<![endif]-->
 </head>
 <!--[if lt IE 7 ]><body class="ie6"><![endif]-->
 <!--[if IE 7 ]>   <body class="ie7"><![endif]-->
@@ -67,56 +67,64 @@
         </div>
         
     </div>
-    <div class="content">
-        <div class="head shade">
-            <h1>Prices for International Calls</h1>
-            <p>Type the name of the country please.</p>
+    <div class="content content_nopadding">
+        <div class="b-downloads g-gradient">
+        	<ul class="b-downloads_menu">
+        		<li class="b-downloads_menu_sep"></li>
+        		<li class="b-downloads_menu_item">
+        			<a href="#" class="b-downloads_menu_item_macos">
+        				<i class="b-downloads_menu_item_icon"></i>
+        				Mac OS
+        			</a>
+        		</li>
+        		<li class="b-downloads_menu_sep"></li>
+        		<li class="b-downloads_menu_item">
+        			<a href="#" class="b-downloads_menu_item_iphone">
+        				<i class="b-downloads_menu_item_icon"></i>
+        				iPhone
+        			</a>
+        		</li>
+        		<li class="b-downloads_menu_sep"></li>
+        		<li class="b-downloads_menu_item js-downloads_menu_item_active">
+        			<a href="#" class="b-downloads_menu_item_ipad">
+        				<i class="b-downloads_menu_item_icon"></i>
+        				iPad
+        			</a>
+        		</li>
+        		<li class="b-downloads_menu_sep"></li>
+        		<li class="b-downloads_menu_item">
+        			<a href="#" class="b-downloads_menu_item_android">
+        				<i class="b-downloads_menu_item_icon"></i>
+        				Android
+        			</a>
+        		</li>
+        		<li class="b-downloads_menu_sep"></li>
+        		<li class="b-downloads_menu_item">
+        			<a href="#" class="b-downloads_menu_item_windows">
+        				<i class="b-downloads_menu_item_icon"></i>
+        				Windows
+        			</a>
+        		</li>
+        		<li class="b-downloads_menu_sep"></li>
+        		<li class="b-downloads_menu_item">
+        			<a href="#" class="b-downloads_menu_item_blackberry">
+        				<i class="b-downloads_menu_item_icon"></i>
+        				Blackberry
+        			</a>
+        		</li>
+        		<li class="b-downloads_menu_sep"></li>
+        	</ul>
+        	<i class="b-downloads_shadow"></i>
         </div>
-        <a class="bt-back" href="#"><span>Pricing &amp; Sign up</span></a>
-        <div class="signup-form">
-            <form method="post" id="customForm" action="">
-                <p><span class="error dnone" id="emailInfo"><span>text</span></span><span class="field field_max"><i class="i-ok"></i><span class="field_icon"><input type="text" id="email" name="email" placeholder="Type country"></span></span></p>
-                <div class="signup_ctrls">
-    				<a class="bt-arrow bg" href="#"><span>Show price</span></a>
-    			</div>
-			</form> 
+        <div class="head b-downloads_bg b-downloads_bg_mac">
+            <h1>Get tell.ly for your Mac</h1>
+            <p>Modern times, most telephones are plugged into telephone jacks. The jacks are connected <br />by inside wiring to a drop wire which connects the building to a cable.</p>
+            <div class="b-downloads_buttons">
+	            <a class="b-button b-button-darr"><i></i><span>Download</span></a>
+	            <a class="b-button b-button-app"><i></i><span>App Store</span></a>
+            </div>
+            <div class="b-downloads_screenshot b-downloads_screenshot_mac"></div>
         </div>
-        
-        <div style="text-align:center">
-        	<table cellpadding="5" cellspacing="5" align="center" class="rates_tbl" width="880">
-            	<tr>
-                	<th>Destination</th>
-                    <th>Prefix</th>
-                    <th>Price per minute</th>
-                </tr>
-                <tr>
-                	<td>Austria landline</td>
-                    <td>+123</td>
-                    <td>$0,20</td>
-                </tr>
-                <tr>
-                	<td>Austria landline</td>
-                    <td>+123</td>
-                    <td>$0,20</td>
-                </tr>
-                <tr>
-                	<td>Austria landline</td>
-                    <td>+123</td>
-                    <td>$0,20</td>
-                </tr>
-                <tr>
-                	<td>Austria landline</td>
-                    <td>+123</td>
-                    <td>$0,20</td>
-                </tr>
-                <tr>
-                	<td>Austria landline</td>
-                    <td>+123</td>
-                    <td>$0,20</td>
-                </tr>
-            </table>
-        </div>
-        
     </div>
     
     <div class="footer">
