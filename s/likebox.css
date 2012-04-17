@@ -1,0 +1,10 @@
+.fan_box .connect_top {
+  background: none !important;
+  padding: 0 !important;
+}
+.fan_box .profileimage, .fan_box .name_block {
+  display: none !important;
+}
+.fan_box .connect_action {
+  padding: 0 !important;
+}
