@@ -1509,6 +1509,8 @@ P.q A {
 					.js-downloads_menu_item_active .b-downloads_menu_item_blackberry .b-downloads_menu_item_icon {background-position: -172px 0;}
 
 		.js-downloads_menu_item_active {width: 104px;background: url(../i/downloads-menu-active-bg.png) no-repeat 0 0;}
+			.js-downloads_menu_item_active a {color: #7fb435;}
+	
 	.b-downloads_bg {padding-top: 20px!important;height: 580px;border-radius: 0 0 3px 3px;}
 		.b-downloads_bg_mac {background: url(../i/downloads-mac-bg.png) no-repeat 50% 0;}
 	.b-downloads_screenshot {margin: 10px auto;}
@@ -1538,6 +1540,3 @@ P.q A {
 		.b-button-app span {padding-left: 22px;}
 		.b-button-app i {width: 27px;height: 29px;background: url(../i/sprite.png) no-repeat -402px 0;top: 10px;}
 
-
-
-			.js-downloads_menu_item_active a {color: #7fb435;}
