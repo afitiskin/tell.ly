@@ -4,7 +4,7 @@
 	<title>Telly</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="s/style.css" />
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=cyrillic,latin" rel="stylesheet" type="text/css">
 	<script src="j/jquery-1.7.2.min.js"></script>
 	<script src="j/decor.js"></script>
 	<script src="j/script.js"></script>
@@ -64,44 +64,44 @@
     </div>
     <div class="content content_nopadding">
         <div class="b-downloads g-gradient">
-        	<ul class="b-downloads_menu">
+        	<ul class="b-downloads_menu" item=".b-downloads_menu_item" block=".js-downloads_block">
         		<li class="b-downloads_menu_sep"></li>
-        		<li class="b-downloads_menu_item">
+        		<li class="b-downloads_menu_item js-downloads_menu_item_active" for=".js-downloads_block_mac">
         			<a href="#" class="b-downloads_menu_item_macos">
         				<i class="b-downloads_menu_item_icon"></i>
         				Mac OS
         			</a>
         		</li>
         		<li class="b-downloads_menu_sep"></li>
-        		<li class="b-downloads_menu_item">
+        		<li class="b-downloads_menu_item" for=".js-downloads_block_iphone">
         			<a href="#" class="b-downloads_menu_item_iphone">
         				<i class="b-downloads_menu_item_icon"></i>
         				iPhone
         			</a>
         		</li>
         		<li class="b-downloads_menu_sep"></li>
-        		<li class="b-downloads_menu_item js-downloads_menu_item_active">
+        		<li class="b-downloads_menu_item" for=".js-downloads_block_ipad">
         			<a href="#" class="b-downloads_menu_item_ipad">
         				<i class="b-downloads_menu_item_icon"></i>
         				iPad
         			</a>
         		</li>
         		<li class="b-downloads_menu_sep"></li>
-        		<li class="b-downloads_menu_item">
+        		<li class="b-downloads_menu_item" for=".js-downloads_block_android">
         			<a href="#" class="b-downloads_menu_item_android">
         				<i class="b-downloads_menu_item_icon"></i>
         				Android
         			</a>
         		</li>
         		<li class="b-downloads_menu_sep"></li>
-        		<li class="b-downloads_menu_item">
+        		<li class="b-downloads_menu_item" for=".js-downloads_block_windows">
         			<a href="#" class="b-downloads_menu_item_windows">
         				<i class="b-downloads_menu_item_icon"></i>
         				Windows
         			</a>
         		</li>
         		<li class="b-downloads_menu_sep"></li>
-        		<li class="b-downloads_menu_item">
+        		<li class="b-downloads_menu_item" for=".js-downloads_block_blackberry">
         			<a href="#" class="b-downloads_menu_item_blackberry">
         				<i class="b-downloads_menu_item_icon"></i>
         				Blackberry
@@ -111,7 +111,7 @@
         	</ul>
         	<i class="b-downloads_shadow g-gradient"></i>
         </div>
-        <div class="head b-downloads_bg b-downloads_bg_mac">
+        <div class="head b-downloads_bg b-downloads_bg_mac js-downloads_block js-downloads_block_mac">
             <h1>Get tell.ly for your Mac</h1>
             <p>Modern times, most telephones are plugged into telephone jacks. The jacks are connected <br />by inside wiring to a drop wire which connects the building to a cable.</p>
             <div class="b-downloads_buttons">
@@ -119,6 +119,51 @@
 	            <a class="b-button50 b-button50_app"><i></i><span>App Store</span></a>
             </div>
             <div class="b-downloads_screenshot b-downloads_screenshot_mac"></div>
+        </div>
+        <div class="head b-downloads_bg js-downloads_block js-downloads_block js-downloads_block_iphone">
+            <h1 class="b-header_polyline">The iPhone app<br />will be ready soon</h1>
+            <p>By now you can use third party sip-apps that can work with tell.ly</p>
+            <ul class="b-downloads_apps">
+				<li class="b-downloads_apps_item"><a href="#">Sip-phone App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">Another App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">PhoneAnywhere</a></li>            
+            </ul>
+        </div>
+        <div class="head b-downloads_bg js-downloads_block js-downloads_block js-downloads_block_ipad">
+            <h1 class="b-header_polyline">The iPad app<br />will be ready soon</h1>
+            <p>By now you can use third party sip-apps that can work with tell.ly</p>
+            <ul class="b-downloads_apps">
+				<li class="b-downloads_apps_item"><a href="#">Sip-phone App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">Another App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">PhoneAnywhere</a></li>            
+            </ul>
+        </div>
+        <div class="head b-downloads_bg js-downloads_block js-downloads_block js-downloads_block_android">
+            <h1 class="b-header_polyline">The Android app<br />will be ready soon</h1>
+            <p>By now you can use third party sip-apps that can work with tell.ly</p>
+            <ul class="b-downloads_apps">
+				<li class="b-downloads_apps_item"><a href="#">Sip-phone App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">Another App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">PhoneAnywhere</a></li>            
+            </ul>
+        </div>
+        <div class="head b-downloads_bg js-downloads_block js-downloads_block js-downloads_block_windows">
+            <h1 class="b-header_polyline">The Windows app<br />will be ready soon</h1>
+            <p>By now you can use third party sip-apps that can work with tell.ly</p>
+            <ul class="b-downloads_apps">
+				<li class="b-downloads_apps_item"><a href="#">Sip-phone App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">Another App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">PhoneAnywhere</a></li>            
+            </ul>
+        </div>
+        <div class="head b-downloads_bg js-downloads_block js-downloads_block js-downloads_block_blackberry">
+            <h1 class="b-header_polyline">The Blackberry app<br />will be ready soon</h1>
+            <p>By now you can use third party sip-apps that can work with tell.ly</p>
+            <ul class="b-downloads_apps">
+				<li class="b-downloads_apps_item"><a href="#">Sip-phone App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">Another App</a></li>            
+				<li class="b-downloads_apps_item"><a href="#">PhoneAnywhere</a></li>            
+            </ul>
         </div>
     </div>
     

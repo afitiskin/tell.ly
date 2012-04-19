@@ -509,7 +509,8 @@ $(document).ready(function(){
 
 	/* ALEX FITISKIN, 17.04.2012. */
 	/* Downloads menu */
-	$('.b-downloads_menu_item').click(function () {
+	$($('.b-downloads_menu').attr('item')).click(function () {
+		
 		var $active = $(this).parent().find('.js-downloads_menu_item_active');
 		$active.prev('.b-downloads_menu_sep').show();
 		$active.next('.b-downloads_menu_sep').show();
@@ -518,6 +519,9 @@ $(document).ready(function(){
 		$(this).prev('.b-downloads_menu_sep').hide();
 		$(this).next('.b-downloads_menu_sep').hide();
 		$(this).addClass('js-downloads_menu_item_active');
+		
+		$($('.b-downloads_menu').attr('block')).hide();
+		$($(this).attr('for')).show();
 		return false;
 	});
 	if ($('.js-downloads_menu_item_active').get(0)) {
@@ -528,7 +532,6 @@ $(document).ready(function(){
 	
 	/* faq social menu */
 	$('.b-faq_menu_social').css('top', $('.b-faq').height() - $('.b-faq_menu_social').height());
-	$('.b-faq_menu_item').click(function () {$(this).toggleClass('b-faq_menu_item_active')});
 }); // dom ready
 
 // globals for dropdown timeout

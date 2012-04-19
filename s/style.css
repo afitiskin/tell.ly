@@ -1523,14 +1523,23 @@ P.q A {
 			.js-downloads_menu_item_active a {color: #7fb435;}
 	
 	
-/* downloads page (content mac) */
-	.b-downloads_bg {height: 580px;border-radius: 0 0 3px 3px;}
-		.b-downloads_bg_mac {background: url(../i/downloads-mac-bg.png) no-repeat 50% 0;}
+/* downloads page (content) */
+	.b-downloads_bg {min-height: 430px;border-radius: 0 0 3px 3px;}
+		.b-downloads_bg_mac {background: url(../i/downloads-mac-bg.png) no-repeat 50% 0;height: 580px;}
 	.b-downloads_screenshot {margin: 10px auto;}
 		.b-downloads_screenshot_mac {background: url(../i/downloads-mac-screenshot.png) no-repeat 0 0;width: 565px;height: 214px;}
 	
 	.b-downloads_buttons {margin: 20px 0;}
 		.b-downloads_buttons a {margin: 0 2px;}
+	
+	.b-downloads_apps {margin: 25px auto;width: 210px;padding: 0;}
+		.b-downloads_apps_item {margin: 0;padding: 4px 0 8px;text-align: center;border-bottom: 1px solid #e5e5e5;}
+			.b-downloads_apps_item:last-child, .b-downloads_apps_item_last {border-bottom: none;}
+		
+			.b-downloads_apps_item a {color: #7fb435;text-decoration: none;}
+				.b-downloads_apps_item a:hover {text-decoration: underline;}	
+
+.b-header_polyline {line-height: 45px;}	
 
 	
 /* faq page */
@@ -1638,7 +1647,7 @@ P.q A {
 	
 		.b-lang_menu_item_active {background: #d2d2d2;}
 			.b-lang_menu_item_active a {color: #fff;}
-	
+
 .b-button50 {display: inline-block;position: relative;height: 50px;background: url(../i/button50-left.png) no-repeat 0 0;padding: 0 0 0 25px;white-space: nowrap;color: #fff;text-decoration: none;line-height: 19px;font-size: 19.5px;font-weght: bold;text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);cursor: pointer;}              
 	.b-button50 i {display: inline-block;position: absolute;top: 9px;left: 12px;opacity: 0.85;}
 		.b-button50:hover i {opacity: 1;}
