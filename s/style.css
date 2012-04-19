@@ -1277,7 +1277,7 @@ A:hover {text-decoration:none}
     width:234px;
     height:448px;
     left:256px;
-    top:86px;
+    top:101px; /* ALEX FITISKIN, 19.04.2012 — h1 padding was changed */
     z-index:10;
 }
 
