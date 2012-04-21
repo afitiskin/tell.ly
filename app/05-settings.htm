@@ -1,0 +1,411 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+	<title></title>
+	<meta charset="utf-8">
+   
+	<link rel="stylesheet" href="s/style.css" />
+	<link rel="stylesheet" href="s/jquery-ui-1.8.12.custom.css" />
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="all" href="s/style-ie.css"/><![endif]-->
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+   
+	<script src="j/jquery-1.5.2.min.js"></script>
+	<script src="j/jquery-ui-1.8.12.custom.min.js"></script>
+	<script src="j/decor.js"></script>
+
+</head>
+<body>
+<i class="body__bg1"></i>
+<div class="body__bg2"><div class="body__bg3">
+<div class="page">
+	
+	<div class="header"><div class="header__i">
+	
+		<h1 class="logo"><img src="i/logo.png" alt="" /></h1>
+
+		<div class="user"><div class="user__i">
+			<a href="#" class="user__power"><i></i>Logout</a>
+			<div class="user__i2">
+				<div class="ava"><img src="i/_temp/ava-01.jpg" alt="" /><i></i></div>
+				<div class="idrop idrop_fixed idrop_user">
+					<a href="#" class="idrop__head">Kostia Osintsev<i class="darr"></i></a>
+					<div class="idrop__body">
+					    <ul>
+							<li><a href="#">User’s profile</a></li>
+							<li><a href="#">Add to Adressbook</a></li>
+							<li><a href="#">Other options</a></li>
+						</ul>
+					</div><!--idrop__body-->
+				</div><!--idrop-->
+				<p class="user__tel">+7 495 926-18-12 #254</p>
+			</div><!--user__i2-->
+		</div></div><!--user-->
+
+		<div class="phone">
+		</div><!--phone-->
+		
+	</div></div><!--header-->
+	
+	<div class="nav">
+		
+		<div class="search"><div class="search__i"><div class="search__i2">
+			<input type="text" class="text text_hint" placeholder="Search" />
+		</div></div></div><!--search-->
+		
+		<div class="sms">
+			<a href="#" class="sms__head"><i></i>Text</a>
+		</div><!--link-sms-->
+		
+		<div class="nav__i"><div class="nav__i2"><div class="nav__i3"><i class="nav__i__em"><i></i></i>
+			<ul>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Address book</a></li>
+				<li class="cur"><a href="#">Team</a></li>
+				<li><a href="#">Statistics</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</div></div></div><!--nav__i-->
+		
+	</div><!--nav-->	
+
+	<div class="body">
+		<div class="side"><i class="side__sh"></i>
+			<div class="side__i">
+				
+				<div class="sidenav">
+					<i class="sidenav__em"></i>
+					<i class="sidenav__em-text-oveflow"></i>
+					<ul>
+						<li class="cur"><a href="#">CompanyCompanyCompany CompanyCompany</a></li>
+						<li><a href="#">PersonalPersonalPersonalPersonal</a></li>
+						<li><a href="#">Billing</a></li>
+					</ul>
+				</div><!--sidenav-->
+				
+			</div><!--side__i-->
+			
+			<div class="side__foo">
+				<div class="lang">
+
+					<div class="idrop idrop_fixed idrop_up idrop_select idrop_flood">
+						<a href="#" class="idrop__head"><span><i class="ico-lang"></i>Language</span></a>
+						<div class="idrop__body">
+							<ul>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Русский</a></li>
+								<li><a href="#">Deutsch</a></li>
+							</ul>
+						</div><!--idrop__body-->
+					</div><!--idrop-->
+
+				</div><!--lang-->
+			</div><!--side__foo-->
+		</div><!--side-->
+		
+		<div class="section">
+			
+			<div class="servnote__box">
+				<div id="servnote_bad" class="servnote servnote-closed servnote_bad">
+					<a hre="#" class="servnote__close ico-close"><i></i></a>
+					Something goes wrong! Check the unfilled forms, please.
+				</div><!--servnote-->
+				<div class="servnote">
+					<a hre="#" class="servnote__close">Continue</a>
+					Everything is awesomely superfine!
+				</div><!--servnote-->
+			</div><!--servnote__box-->
+			<script>
+				$(function() {
+					$('#servnote_bad').delay(2000).slideDown();
+				});
+			</script>
+			
+			<div class="section__i">
+				<h3>What will we do with all incoming calls?</h3>
+				<div class="cols cols3">
+					<div class="cols__i">
+
+						<ul class="rlist rlist_folders">
+							<li>
+								<label><input type="radio" name="r1" /> Send to user/extension</label>
+							</li>
+							<li class="cur">
+								<label><input type="radio" name="r1" checked="checked" /> Forward to phone number</label>
+								<div class="rlist_folders__i">
+									<span class="field field_max field_grey field_strong"><input type="text" /></span>
+								</div><!--rlist_folders__i-->
+							</li>
+							<li>
+								<label><input type="radio" name="r1" /> Forward to skype</label>
+								<div class="rlist_folders__i">
+									<span class="field field_max field_grey field_strong"><input type="text" /></span>
+								</div><!--rlist_folders__i-->
+							</li>
+							<li>
+								<label><input type="radio" name="r1" /> Forward to gtalk</label>
+								<div class="rlist_folders__i">
+									<span class="field field_max field_grey field_strong"><input type="text" /></span>
+								</div><!--rlist_folders__i-->
+							</li>
+						</ul><!--rlist rlist_folders-->
+
+					</div><!--cols__i-->
+				</div><!--cols cols3-->
+			</div><!--section__i-->
+
+			<div class="section__i">
+				<div class="cols cols3">
+					<div class="cols__i">
+						<h3>Welcome speech</h3>
+						<div class="greybox">
+							<div class="file">
+								<div class="file__h">
+									<a href="#" class="file__del"></a>
+									<h4>Filename.mp3</h4>
+								</div><!--file__h-->
+								<hr />
+								<div class="file__ctrls">
+									<div class="nice-chk nice-chk_checked"><input type="checkbox" /><i></i><span class="nice-chk__on">ON</span><span class="nice-chk__off">OFF</span></div>
+
+									<div class="player">
+										<a href="#" class="bt-play"></a>
+										<div class="player__i">
+											<div class="player__track"><span class="player__track__i"></span><span class="player__track__range" style="width:30%;"></span><i style="left:30%;"></i></div>
+											<div class="player__track player__track_vol"><span class="player__track__i"></span><span class="player__track__range" style="width:80%;"></span><i style="left:80%;"></i></div>
+											<i class="player__mute"></i>
+										</div><!--player__i-->
+										
+										
+										
+									</div><!--player-->
+
+
+
+
+								</div><!--file__ctrls-->
+							</div><!--file-->
+						</div><!--greybox-->
+					</div><!--cols__i-->
+					<div class="cols__i">
+						<h3>Voicemail</h3>
+						<div class="greybox">
+							<div class="file">
+								<div class="file__h">
+									<span class="bt-file">
+										<span class="bt-m"><span>Browse</span></span>
+										<input type="file" />
+									</span>									
+									<span class="bt-file__label">Upload an *.mp3 file</span>
+								</div><!--file__h-->
+								<hr />
+								<div class="file__ctrls">
+									<div class="nice-chk"><input type="checkbox" /><i></i><span class="nice-chk__on">ON</span><span class="nice-chk__off">OFF</span></div>
+									<div class="player player_plaing  player_open">
+										<a href="#" class="bt-play"></a>
+										<div class="player__i">
+											<div class="player__track"><span class="player__track__i"></span></div>
+											<div class="player__track player__track_vol"><span class="player__track__i"></span></div>
+											<i class="player__mute"></i>
+										</div><!--player__i-->
+
+									</div><!--player-->
+								</div><!--file__ctrls-->
+							</div><!--file-->
+						</div><!--greybox-->
+					</div><!--cols__i-->
+					<div class="cols__i">
+						<h3>Call hold music</h3>
+						<div class="greybox">
+							<div class="file">
+								<div class="file__h">
+									<span class="bt-file">
+										<span class="bt-m"><span>Browse</span></span>
+										<input type="file" />
+									</span>									
+									<span class="bt-file__label">Upload an *.mp3 file</span>
+								</div><!--file__h-->
+								<hr />
+								<div class="file__ctrls">
+									<div class="player">
+										<a href="#" class="bt-play"></a>
+									</div><!--player-->
+								</div><!--file__ctrls-->
+							</div><!--file-->
+						</div><!--greybox-->
+					</div><!--cols__i-->
+				</div><!--cols cols3-->
+			</div><!--section__i-->
+			
+			<div class="section__i">
+				<div class="cols cols21">
+					<div class="cols__i cols__i2">
+						<p class="workh__timezone">
+						    Time zone
+							<span class="field field_p23 field_drop field_strong">
+								<select>
+									<option>GMT -5 (MoscowMoscowMoscowMoscow)</option>
+									<option>GMT +2 (Athens)</option>
+								</select>
+								<span class="field__h"><span>GMT -5 (MoscowMoscowMoscowMoscow)</span><i></i></span>
+							</span><!--field field_drop-->
+						</p>
+						<h3>Working hours</h3>
+							
+						<div class="workh">
+							
+							<table class="t-workh">
+								<tr class="tr-active">
+									<td class="td-day"><label><input type="checkbox" checked="checked" /> Monday</label></td>
+									<td class="td-hours">
+										<span class="field field_time field_grey field_strong"><input type="text" value="09:30" /></span>
+										<span class="field field_time field_grey field_strong"><input type="text" value="18:30" /></span>
+									</td>
+									<td class="td-hours-drags">
+										<div class="drag"><i class="drag__from">00:00</i><i class="drag__to">24:00</i>
+											<div class="drag__i"></div>
+										</div><!--drag-->
+									</td>
+								</tr>
+								<tr class="tr-active">
+									<td class="td-day"><label><input type="checkbox" checked="checked" /> Tuesday</label></td>
+									<td class="td-hours">
+										<span class="field field_time field_grey field_strong"><input type="text" value="09:30" /></span>
+										<span class="field field_time field_grey field_strong"><input type="text" value="18:30" /></span>
+									</td>
+									<td class="td-hours-drags">
+										<div class="drag"><i class="drag__from">00:00</i><i class="drag__to">24:00</i>
+											<div class="drag__i"></div>
+										</div><!--drag-->
+									</td>
+								</tr>
+								<tr class="tr-active">
+									<td class="td-day"><label><input type="checkbox" checked="checked" /> Wednesday</label></td>
+									<td class="td-hours">
+										<span class="field field_time field_grey field_strong"><input type="text" value="09:30" /></span>
+										<span class="field field_time field_grey field_strong"><input type="text" value="18:30" /></span>
+									</td>
+									<td class="td-hours-drags">
+										<div class="drag"><i class="drag__from">00:00</i><i class="drag__to">24:00</i>
+											<div class="drag__i"></div>
+										</div><!--drag-->
+									</td>
+								</tr>
+								<tr>
+									<td class="td-day"><label><input type="checkbox" /> Thursday</label></td>
+									<td class="td-hours">
+										<span class="field field_time field_grey field_strong"><input type="text" value="09:30" /></span>
+										<span class="field field_time field_grey field_strong"><input type="text" value="18:30" /></span>
+									</td>
+									<td class="td-hours-drags">
+										<div class="drag"><i class="drag__from">00:00</i><i class="drag__to">24:00</i>
+											<div class="drag__i"></div>
+										</div><!--drag-->
+									</td>
+								</tr>
+								<tr>
+									<td class="td-day"><label><input type="checkbox" /> Friday</label></td>
+									<td class="td-hours">
+										<span class="field field_time field_grey field_strong"><input type="text" value="09:30" /></span>
+										<span class="field field_time field_grey field_strong"><input type="text" value="18:30" /></span>
+									</td>
+									<td class="td-hours-drags">
+										<div class="drag"><i class="drag__from">00:00</i><i class="drag__to">24:00</i>
+											<div class="drag__i"></div>
+										</div><!--drag-->
+									</td>
+								</tr>
+								<tr class="tr-active">
+									<td class="td-day"><label><input type="checkbox" checked="checked" /> Saturday</label></td>
+									<td class="td-hours">
+										<span class="field field_time field_grey field_strong"><input type="text" value="09:30" /></span>
+										<span class="field field_time field_grey field_strong"><input type="text" value="18:30" /></span>
+									</td>
+									<td class="td-hours-drags">
+										<div class="drag"><i class="drag__from">00:00</i><i class="drag__to">24:00</i>
+											<div class="drag__i"></div>
+										</div><!--drag-->
+									</td>
+								</tr>
+								<tr>
+									<td class="td-day"><label><input type="checkbox" /> Sunday</label></td>
+									<td class="td-hours">
+										<span class="field field_time field_grey field_strong"><input type="text" value="09:30" /></span>
+										<span class="field field_time field_grey field_strong"><input type="text" value="18:30" /></span>
+									</td>
+									<td class="td-hours-drags">
+										<div class="drag"><i class="drag__from">00:00</i><i class="drag__to">24:00</i>
+											<div class="drag__i"></div>
+										</div><!--drag-->
+									</td>
+								</tr>
+							</table>
+							
+						</div><!--workh-->
+						
+					</div><!--cols__i-->
+					<div class="cols__i cols__i1">
+						<p class="greybox__h">Voice message for non working days</p>
+						<div class="greybox">
+							<div class="file">
+								<div class="file__h">
+									<span class="bt-file">
+										<span class="bt-m"><span>Browse</span></span>
+										<input type="file" />
+									</span>									
+									<span class="bt-file__label">Upload an *.mp3 file</span>
+								</div><!--file__h-->
+								<hr />
+								<div class="file__ctrls">
+									<div class="player">
+										<a href="#" class="bt-play"></a>
+									</div><!--player-->
+								</div><!--file__ctrls-->
+							</div><!--file-->
+						</div><!--greybox-->
+					</div><!--cols__i-->
+				</div><!--cols cols3-->
+			</div><!--section__i-->
+			
+			<div class="section__i">
+				<h3>New user/extension</h3>
+				<div class="cols cols3">
+					<div class="cols__i">
+						<p><label class="label-t">Name</label> <span class="field field_max"><i class="i-req"></i><span class="field_icon"><input type="text"></span></span></p>
+					</div><!--cols__i-->
+					<div class="cols__i">
+						<p><label class="label-t">Description</label> <span class="field field_max"><i class="i-ok"></i><span class="field_icon"><input type="text"></span></span></p>
+					</div><!--cols__i-->
+					<div class="cols__i">
+						<p><label class="label-t">Name</label> <span class="field field_max"><i class="i-req"></i><span class="field_icon"><input type="text"></span></span></p>
+					</div><!--cols__i-->
+				</div><!--cols cols3-->
+				<br />
+				<p><label class="label-t">Name</label> <span class="field field_p60"><textarea cols="40" rows="6"></textarea></span></p>
+			</div><!--section__i-->
+
+			<div class="section__i">
+				<div class="photo">
+					<img src="i/_temp/photo-00.jpg" alt="" />
+					<ul class="photo__ctrls">
+						<li><span class="upload"><a href="#" class="photo__ctrls__upload"><i></i>Upload userpic</a><input type="file" /></span></li>
+					</ul>
+				</div><!--photo-->
+			</div><!--section__i-->
+
+			<div class="ctrls">
+				<a href="#" class="bt-l"><span>Save</span></a>
+			</div><!--ctrls-->
+			
+		</div><!--section-->
+	</div><!--body-->
+
+	<div class="footer">
+		<h3 class="foo-logo">tell.ly</h3>
+	</div><!--footer-->
+
+</div><!--page-->
+</div></div><!--body-bg-->
+
+</body></html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html> 
+<html>
+<head>
+
+	<title></title>
+	<meta charset="utf-8">
+   
+	<link rel="stylesheet" href="s/style.css" />
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="all" href="s/style-ie.css"/><![endif]-->
+   
+   <link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+   
+	<script src="j/jquery-1.5.2.min.js"></script>
+	<script src="j/decor.js"></script>
+
+</head>
+<body>
+<i class="body__bg1"></i>
+<div class="body__bg2"><div class="body__bg3">
+<div class="page">
+	
+	<div class="header"><div class="header__i">
+	
+		<h1 class="logo"><img src="i/logo.png" alt="" /></h1>
+
+		<div class="user"><div class="user__i">
+			<a href="#" class="user__power"><i></i>Logout</a>
+			<div class="user__i2">
+				<div class="ava"><img src="i/_temp/ava-01.jpg" alt="" /><i></i></div>
+				<div class="idrop idrop_fixed idrop_user">
+					<a href="#" class="idrop__head">Kostia Osintsev<i class="darr"></i></a>
+					<div class="idrop__body">
+					    <ul>
+							<li><a href="#">User’s profile</a></li>
+							<li><a href="#">Add to Adressbook</a></li>
+							<li><a href="#">Other options</a></li>
+						</ul>
+					</div><!--idrop__body-->
+				</div><!--idrop-->
+				<p class="user__tel">+7 495 926-18-12 #254</p>
+			</div><!--user__i2-->
+		</div></div><!--user-->
+
+		<div class="phone">
+		</div><!--phone-->
+		
+	</div></div><!--header-->
+	
+	<div class="nav">
+		
+		<div class="search"><div class="search__i"><div class="search__i2">
+			<input type="text" class="text text_hint" placeholder="Search" />
+		</div></div></div><!--search-->
+		
+		<div class="sms">
+			<a href="#" class="sms__head"><i></i>Text</a>
+		</div><!--link-sms-->
+		
+		<div class="nav__i"><div class="nav__i2"><div class="nav__i3"><i class="nav__i__em"><i></i></i>
+			<ul>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Address book</a></li>
+				<li class="cur"><a href="#">Team</a></li>
+				<li><a href="#">Statistics</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</div></div></div><!--nav__i-->
+		
+	</div><!--nav-->	
+
+	<div class="body">
+		<div class="side"><i class="side__sh"></i>
+			<div class="side__i">
+				<div class="sidenav">
+					<i class="sidenav__em"></i>
+					<ul>
+						<li><a href="#">All Calls</a></li>
+						<li><a href="#">Incoming</a></li>
+						<li><a href="#">Outgoing</a></li>
+						<li class="cur"><a href="#">Missed</a></li>
+						<li><a href="#">Voicemail</a></li>
+						<li><a href="#">SMS</a></li>
+					</ul>
+				</div><!--sidenav-->
+				
+				
+			</div><!--side__i-->
+			
+			<div class="side__foo">
+				<div class="lang">
+
+					<div class="idrop idrop_fixed idrop_up idrop_select idrop_flood">
+						<a href="#" class="idrop__head"><span><i class="ico-lang"></i>Language</span></a>
+						<div class="idrop__body">
+							<ul>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Русский</a></li>
+								<li><a href="#">Deutsch</a></li>
+							</ul>
+						</div><!--idrop__body-->
+					</div><!--idrop-->
+
+				</div><!--lang-->
+			</div><!--side__foo-->
+		</div><!--side-->
+		
+		<div class="section">
+			
+			<table class="t-calls">
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Kate Moss</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Today <i class="middot"></i> 16:44</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+					</td>
+					<td class="td-length">
+						00:36
+					</td>
+					<td class="td-userc">
+					    <ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+					<td class="td-badge">
+						<span class="badge badge_green"><span>incoming</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Siarhei Stashkevich</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Yesterday <i class="middot"></i> 13:54</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+						<div class="player">
+							<a href="#" class="bt-play"></a>
+						</div><!--player-->
+					</td>
+					<td class="td-length">
+						05:16
+						<a href="#" class="bt-download"></a>
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+					<td class="td-badge">
+						<span class="badge badge_grey"><span>outgoing</span></span>
+					</td>
+					<td class="td-ava">
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Kate Moss</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Today <i class="middot"></i> 16:44</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+					</td>
+					<td class="td-length">
+						00:36
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+					<td class="td-badge">
+						<span class="badge badge_violet"><span>vmail</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history history_missed">
+								<p class="history__who"><strong>Siarhei Stashkevich</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Yesterday <i class="middot"></i> 13:54</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+						<div class="player">
+							<a href="#" class="bt-play"></a>
+						</div><!--player-->
+					</td>
+					<td class="td-length">
+						05:16
+						<a href="#" class="bt-download"></a>
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+					<td class="td-badge">
+						<span class="badge badge_red"><span>missed</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Kate Moss</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Today <i class="middot"></i> 16:44</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+					</td>
+					<td class="td-length">
+						00:36
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+
+					<td class="td-badge">
+						<span class="badge badge_black"><span>fax</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Siarhei Stashkevich</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Yesterday <i class="middot"></i> 13:54</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+						<div class="player">
+							<a href="#" class="bt-play"></a>
+						</div><!--player-->
+					</td>
+					<td class="td-length">
+						05:16
+						<a href="#" class="bt-download"></a>
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+
+					<td class="td-badge">
+						<span class="badge badge_grey"><span>outgoing</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Kate Moss</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Today <i class="middot"></i> 16:44</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+					</td>
+					<td class="td-length">
+						00:36
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+
+					<td class="td-badge">
+						<span class="badge badge_green"><span>incoming</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Siarhei Stashkevich</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Yesterday <i class="middot"></i> 13:54</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+						<div class="player">
+							<a href="#" class="bt-play"></a>
+						</div><!--player-->
+					</td>
+					<td class="td-length">
+						05:16
+						<a href="#" class="bt-download"></a>
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+
+					<td class="td-badge">
+						<span class="badge badge_grey"><span>outgoing</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Kate Moss</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Today <i class="middot"></i> 16:44</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+					</td>
+					<td class="td-length">
+						00:36
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+
+					<td class="td-badge">
+						<span class="badge badge_green"><span>incoming</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+				<tr>
+					<td class="td-who">
+						<div class="fo"><i class="fo__sh"></i>
+							<div class="history">
+								<p class="history__who"><strong>Siarhei Stashkevich</strong> <i class="rarr"></i> Bill Jobs</p>
+								<p class="history__when">Yesterday <i class="middot"></i> 13:54</p>
+							</div><!--history-->
+						</div><!--fo-->
+					</td>
+					<td class="td-player">
+						<div class="player">
+							<a href="#" class="bt-play"></a>
+						</div><!--player-->
+					</td>
+					<td class="td-length">
+						05:16
+						<a href="#" class="bt-download"></a>
+					</td>
+					<td class="td-userc">
+						<ul class="userc">
+							<li><a href="#" class="link-call"><i></i>Call</a></li>
+							<li><a href="#" class="link-sms"><i></i>Text</a></li>
+							<li>
+								<div class="idrop idrop_user2 idrop_self">
+									<a href="#" class="idrop__head"><i class="darr"></i></a>
+									<div class="idrop__pop"><i class="idrop__pop__t"></i><i class="idrop__pop__arr"></i><div class="idrop__pop__i">
+										<div class="idrop__body">
+											<ul>
+												<li><a href="#">User’s profile</a></li>
+												<li><a href="#">Add to Adressbook</a></li>
+												<li><a href="#">Other options</a></li>
+											</ul>
+										</div><!--idrop__body-->
+									</div></div>
+								</div><!--idrop-->
+							</li>
+						</ul><!--userc-->
+					</td>
+
+					<td class="td-badge">
+						<span class="badge badge_grey"><span>outgoing</span></span>
+					</td>
+					<td class="td-ava">
+						<div class="ava"><img src="i/_temp/ava-02.jpg" alt="" /><i></i></div>
+					</td>
+				</tr>
+			</table>
+			
+		</div><!--section-->
+	</div><!--body-->
+
+	<div class="footer">
+		<h3 class="foo-logo">tell.ly</h3>
+	</div><!--footer-->
+
+</div><!--page-->
+</div></div><!--body-bg-->
+
+
+
+<div class="pop-grey pop-grey_sms" style="left:100px;top:100px;">
+	<div class="pop-grey__bg"><i class="pop-grey__bg__t"></i><i class="pop-grey__bg__b"></i><i class="pop-grey__bg__i"></i></div>
+	<div class="pop-grey__i">
+		
+		<div class="xfield">
+			<div class="xfield__t">
+				<h3>Number or person</h3>
+			</div>
+			<div class="greyfield greyfield_number">
+				<i class="ico-flag ico-flag01"></i>
+				<i class="greyfield__clear"></i>
+				<div class="greyfield__i"><input type="text" class="text" value="+370 64828195" /></div>
+			</div><!--greyfield-->
+			<div class="xfield__b">
+				<a href="#" class="link-onemore"><i></i>One more number</a>
+			</div><!--greyfield__opts-->
+		</div><!--xfield-->
+
+		<div class="xfield">
+			<div class="greyfield greyfield_sms">
+				<div class="greyfield__i"><textarea cols="30" rows="6" maxlength="160"></textarea></div>
+			</div><!--greyfield-->
+			<div class="xfield__b">
+				<div class="time-tune time-tune_closed">
+					<a href="#" class="link-time"><i></i>Choose specific sending time</a>
+					<p>
+						<input type="text" class="text text_n2" value="08"></input>
+						<input type="text" class="text text_n2" value="11"></input>
+						<input type="text" class="text text_n4" value="2011"></input> &nbsp;&nbsp;
+						<input type="text" class="text text_n2" value="18"></input> :
+						<input type="text" class="text text_n2" value="11"></input>
+					</p>
+				</div><!--time-tune-->
+				<div class="xfield_sms__chars"><strong>160</strong> characters left</div>
+			</div><!--greyfield__opts-->
+		</div><!--xfield-->
+		
+		<div class="hr"></div>
+		
+		<div class="pop-grey__ctrls">
+			<a href="#" class="bt-m-dark"><span>Send</span></a>
+		</div><!--pop-grey__ctrls-->
+		
+	</div><!--pop-grey__i-->
+</div><!--pop-grey-->
+
+</body></html>
