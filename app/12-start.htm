@@ -1,0 +1,350 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+   
+	<link rel="stylesheet" href="s/style.css" />
+	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" media="all" href="s/style-ie.css"/><![endif]-->
+   
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu&amp;subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+   
+	<script src="j/jquery-1.5.2.min.js"></script>
+	<script src="j/decor.js"></script>
+
+</head>
+<body>
+<i class="body__bg1"></i>
+<div class="body__bg2"><div class="body__bg3">
+<div class="page">
+	
+	<div class="header"><div class="header__i">
+	
+		<h1 class="logo"><img src="i/logo.png" alt="" /></h1>
+
+		<div class="user"><div class="user__i">
+			<a href="#" class="user__power"><i></i>Logout</a>
+			<div class="user__i2">
+				<div class="ava"><img src="i/_temp/ava-01.jpg" alt="" /><i></i></div>
+				<div class="idrop idrop_fixed idrop_user">
+					<a href="#" class="idrop__head">Kostia Osintsev<i class="darr"></i></a>
+					<div class="idrop__body">
+					    <ul>
+							<li><a href="#">User’s profile</a></li>
+							<li><a href="#">Add to Adressbook</a></li>
+							<li><a href="#">Other options</a></li>
+						</ul>
+					</div><!--idrop__body-->
+				</div><!--idrop-->
+				<p class="user__tel">+7 495 926-18-12 #254</p>
+			</div><!--user__i2-->
+		</div></div><!--user-->
+
+		<div class="phone">
+		</div><!--phone-->
+		
+	</div></div><!--header-->
+	
+	<div class="nav">
+		
+		<div class="search"><div class="search__i"><div class="search__i2">
+			<input type="text" class="text text_hint" placeholder="Search" />
+		</div></div></div><!--search-->
+		
+		<div class="sms">
+			<a href="#" class="sms__head"><i></i>Text</a>
+		</div><!--link-sms-->
+		
+		<div class="nav__i"><div class="nav__i2"><div class="nav__i3"><i class="nav__i__em"><i></i></i>
+			<ul>
+				<li><a href="#">History</a></li>
+				<li><a href="#">Address book</a></li>
+				<li class="cur"><a href="#">Team</a></li>
+				<li><a href="#">Statistics</a></li>
+				<li><a href="#">Settings</a></li>
+			</ul>
+		</div></div></div><!--nav__i-->
+		
+	</div><!--nav-->	
+
+	<div class="body">
+		<div class="side"><i class="side__sh"></i>
+			<div class="side__i">
+				<div class="sidenav">
+					<i class="sidenav__em"></i>
+					<ul>
+						<li><a href="#">All Calls</a></li>
+						<li><a href="#">Incoming</a></li>
+						<li><a href="#">Outgoing</a></li>
+						<li class="cur"><a href="#">Missed</a></li>
+						<li><a href="#">Voicemail</a></li>
+						<li><a href="#">SMS</a></li>
+					</ul>
+				</div><!--sidenav-->
+				
+				
+			</div><!--side__i-->
+			
+			<div class="side__foo">
+				<div class="lang">
+
+					<div class="idrop idrop_fixed idrop_up idrop_select idrop_flood">
+						<a href="#" class="idrop__head"><span><i class="ico-lang"></i>Language</span></a>
+						<div class="idrop__body">
+							<ul>
+								<li><a href="#">English</a></li>
+								<li><a href="#">Русский</a></li>
+								<li><a href="#">Deutsch</a></li>
+							</ul>
+						</div><!--idrop__body-->
+					</div><!--idrop-->
+
+				</div><!--lang-->
+			</div><!--side__foo-->
+		</div><!--side-->
+		
+		<div class="section">
+			
+			<div class="intro">
+				<h2>Welcome to tell.ly</h2>
+				<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum".</p>
+				<p><a href="#" class="link-green">Test call</a></p>
+			</div><!--intro-->
+			
+		</div><!--section-->
+	</div><!--body-->
+
+	<div class="footer">
+		<h3 class="foo-logo">tell.ly</h3>
+	</div><!--footer-->
+
+</div><!--page-->
+</div></div><!--body-bg-->
+
+
+<div class="tint"></div>
+<div class="popup">
+	<div class="setup">
+		<div class="setup__step setup__step_cur">
+			<div class="popup__h">
+				<h3><small>Setup</small> <i class="popup__h__step">1</i> Choose your phone number</h3>	
+			</div><!--popup__h-->
+			<div class="popup__i">
+				<div class="popup__section">
+					<div class="nav__i">
+						<div class="nav__i2">
+							<div class="nav__i3">
+								<i class="nav__i__em"><i></i></i>
+								<ul>
+									<li class="cur"><a href="#">Local</a></li>
+									<li><a href="#">Toll-free</a></li>
+								</ul>
+							</div>
+						</div>
+					</div><!-- nav__i -->
+				</div><!-- popup__section -->
+				<div class="popup__section">
+					<div class="cols cols2">
+						<div class="cols__i">
+							<p>
+								<label class="label-t">Country</label>
+								<span class="field field_max field_drop">
+									<select>
+										<option>Russia</option>
+										<option>Camerun</option>
+										<option>Kenia</option>
+										<option>Kingdom of Swaziland</option>
+									</select>
+									<span class="field__h"><img src="i/flags/02.png" alt="" /><span>Russia</span><i></i></span>
+								</span><!--field field_drop-->
+							</p>
+							<p><label class="label-t">Zip code</label> <span class="field field_max"><input type="text"></span></p>
+						</div><!--cols__i-->
+						<div class="cols__i">
+							<p>
+								<label class="label-t">Region</label>
+								<span class="field field_max field_drop">
+									<select>
+										<option>Moscow</option>
+										<option>Athens</option>
+									</select>
+									<span class="field__h"><span>Moscow</span><i></i></span>
+								</span><!--field field_drop-->
+							</p>
+							<p><label class="label-t">Number search</label> <span class="field field_max"><input type="text"></span></p>
+						</div><!--cols__i-->
+						<div class="cols__i">
+							<p>
+								<label class="label-t">Region</label>
+								<span class="field field_max field_drop">
+									<img class="field_loading" src="i/loader1.gif" alt="loading" />
+									<select>
+										<option>&nbsp;</option>
+									</select>
+									<span class="field__h"><span></span><i></i></span>
+								</span><!--field field_drop-->
+							</p>
+						</div><!--cols__i-->
+					</div><!--cols cols2-->
+				</div><!--popup__section-->
+				<div class="popup__section">
+					<p class="setup__step__message_1">Choose your region to get a list of numbers</p>
+				</div><!-- popup__section -->
+				<div class="popup__f">
+					<a href="#" class="bt-m setup__step__bt-next" data-state="disabled"><span>Next step</span></a>
+				</div><!--popup__f-->
+				<div class="popup__section">
+					<div class="cols cols2">
+						<div class="cols__i">
+							&nbsp;
+						</div><!--cols__i-->
+						<div class="cols__i">
+							<p class="setup__step__message_2">Select the number <i class="setup__step__message_2_icon"></i></p>
+							<ul class="rlist rlist_folders">
+								<li><label><span class="bt-small">Select</span><input type="radio" name="r2" /> <strong>+7 495 123-45-67</strong></label></li>
+								<li class="cur"><span class="bt-small">Select</span><label><input type="radio" name="r2" checked="checked" /> <strong>+7 495 123-88-44</strong></label></li>
+								<li><label><span class="bt-small">Select</span><input type="radio" name="r2" /> <strong>+7 495 123-45-45</strong></label></li>
+								<li><label><span class="bt-small">Select</span><input type="radio" name="r2" /> <strong>+7 495 987-45-67</strong></label></li>
+							</ul><!--rlist rlist_folders-->
+						</div><!--cols__i-->
+					</div><!--cols cols2-->
+				</div><!--popup__section-->
+				<div class="popup__section">
+					<p class="setup__step__message_3">The numbers you've chosen are</p>
+					<div class="cols cols2">
+						<div class="cols__i">
+							<ul class="selected_numbers">
+								<li>+7 495 123-45-67 <i class="i-ok"></i></li>
+							</ul><!--rlist rlist_folders-->
+						</div><!--cols__i-->
+						<div class="cols__i">
+							<div class="box-add">
+								<a href="#" class="link-add-num"><i></i>One more number</a>
+							</div><!--box-add-->
+						</div><!--cols__i-->
+					</div><!--cols cols2-->
+				</div><!--popup__section-->
+				<div class="popup__section">
+					<p class="setup__step__message_3">The numbers you've chosen are</p>
+					<div class="cols cols2">
+						<div class="cols__i">
+							<ul class="selected_numbers">
+								<li>+7 495 123-45-67 <i class="i-ok"></i></li>
+							</ul><!--rlist rlist_folders-->
+						</div><!--cols__i-->
+						<div class="cols__i">
+							<div class="box-add">
+								<span class="loading3">Loading</span>
+							</div><!--box-add-->
+						</div><!--cols__i-->
+					</div><!--cols cols2-->
+				</div><!--popup__section-->
+			</div><!--popup__i-->
+			<div class="popup__f">
+				<a href="#" class="bt-m setup__step__bt-next"><span>Next step</span></a>
+			</div><!--popup__f-->
+		</div><!--setup__step-->
+
+		<div class="setup__step b-setup_step2">
+			<div class="popup__h">
+				<h3><small>Setup</small> <i class="popup__h__step">2</i> That’s it!</h3>	
+			</div><!--popup__h-->
+			<div class="popup__i">
+				<div class="popup__section b-setup_step2_account">
+					<div class="b-setup_step2_account_phone">+7 495 123-88-44</div>
+					<div class="b-setup_step2_account_phone_caption">Сongratulations! This is your company’s phone number now</div>
+					
+					<div class="b-setup_step2_cols b-setup_step2_cols_bg">
+						<div class="b-setup_step2_col1"><h4>Your personal <br />SIP account</h4></div>
+						<div class="b-setup_step2_col2">
+							<dl>
+								<dt>Server (proxy)</dt>
+								<dd>www.tell.ly</dd>
+							</dl>
+							<dl>
+								<dt>User (SIP-name)</dt>
+								<dd>vasia</dd>
+							</dl>
+							<dl>
+								<dt>Password</dt>
+								<dd>your global tell.ly password</dd>
+							</dl>
+						</div>
+						
+						<a href="#" class="b-setup_step2_account_remember"><span>remember</span></a>
+					</div>
+				</div><!--popup__section-->
+				<div class="popup__section">
+					<div class="b-setup_step2_cols">
+						<div class="b-setup_step2_col1"><h4>How to call and<br />receive calls</h4></div>
+						<div class="b-setup_step2_col2">
+							<dl class="b-setup_step2_col2_marked">
+								<dt><i class="b-setup_step2_col2_marker"></i>Set up your IP-phone</dt>
+								<dd><span class="b-setup_step2_col2_arrow_top"><i></i>Use these settings</span></dd>
+								<i class="g-clear"></i>
+							</dl>
+							<dl class="b-setup_step2_col2_marked">
+								<dt><i class="b-setup_step2_col2_marker"></i>Install any VoIP app</dt>
+								<dd><a href="#" class="b-setup_step2_col2_greentext">List of apps</a></dd>
+								<i class="g-clear"></i>
+							</dl>
+							<dl class="b-setup_step2_col2_marked">
+								<dt><i class="b-setup_step2_col2_marker"></i>Use our webphone</dt>
+								<dd></dd>
+								<i class="g-clear"></i>
+							</dl>
+						</div>
+					</div>
+				</div><!--popup__section-->
+			</div><!--popup__i-->
+			<div class="popup__f">
+				<a href="#" class="bt-m setup__step__bt-skip"><span>Skip</span></a>
+				<a href="#" class="bt-m setup__step__bt-next"><span>Invite your team</span></a>
+			</div><!--popup__f-->
+		</div><!--setup__step-->
+
+
+		<div class="setup__step b-setup_step3">
+			<div class="popup__h">
+				<h3><small>Setup</small> <i class="popup__h__step">3</i> Invite your team</h3>	
+			</div><!--popup__h-->
+			<div class="popup__i">
+				<div class="popup__section">
+					<h4>Enter emails of employees you want to give access</h4>
+					<form class="b-setup_step3_form">
+						<span class="field field_max"><input value="example@email.com" type="text"></span>
+						<span class="field field_max"><input type="text"></span>
+						<span class="field field_max"><input type="text"></span>
+						<a href="#" class="b-setup_step3_addfield"><i></i> Add more</a>
+					</form>
+				</div><!--popup__section-->
+				<div class="popup__section">
+					<h4>Specify invitation text</h4>
+					<form>
+						<span class="field field_textarea"><textarea cols="40" rows="6">Hi guys! Everybody will get a free phone now. It’s on me and it’s pretty cool. Check it out.</textarea></span>
+					</form>
+				</div><!--popup__section-->
+			</div><!--popup__i-->
+			<div class="popup__f">
+				<a href="#" class="bt-m setup__step__bt-skip"><span>Skip</span></a>
+				<a href="#" class="bt-m setup__step__bt-next"><span>Ready</span></a>
+			</div><!--popup__f-->
+			<div class="popup__i">
+				<div class="popup__section">
+					<h4 class="b-setup_ready">Test tell.ly with teammates. Share your number and start getting calls.</h4>
+					<form class="b-setup_social">
+						<a href="#" class="b-setup_social_button_fb"></a>
+						<a href="#" class="b-setup_social_button_twi"></a>
+						<a href="#" class="b-setup_social_button_linkedin"></a>
+					</form>
+				</div><!--popup__section-->
+			</div><!--popup__i-->
+			<div class="popup__f">
+				<a href="#" class="bt-m setup__step__bt-next"><span>Go use it!</span></a>
+			</div><!--popup__f-->
+		</div><!--setup__step-->
+
+	</div><!--setup-->
+</div><!--popup-->
+
+</body></html>

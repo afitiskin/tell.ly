@@ -556,7 +556,26 @@ $(document).ready(function(){
 		}
 		return false;
 	});
-
+	
+	/* ALEX FITISKIN 21.04.2012 */
+	$('.b-settings_list_item_notice_icon').mouseenter(function () {
+		$(this).parents('li').find('.b-settings_list_item_notice_popup').fadeIn(200);
+	}).mouseleave(function () {
+		$(this).parents('li').find('.b-settings_list_item_notice_popup').fadeOut(200);
+	});
+	
+	
+	$('.b-settings_list_item_plus_button').click(function () {
+		var newField = $(this).parents('.rlist_folders__i').find('.b-settings_list_item_field').get(0);
+		$(this).parents('.rlist_folders__i').append($(newField).clone());
+		return false;
+	});
+	$('.b-setup_step3_addfield').click(function () {
+		var newField = $($(this).parent().find('.field').get(0)).clone();
+		$(newField).find('input').val('');
+		$(this).parent().append(newField);
+		return false;
+	});
 }); // dom ready
 
 // globals for dropdown timeout
