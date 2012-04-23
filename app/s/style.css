@@ -708,6 +708,7 @@ A {
 				line-height:17px;
 				height:17px;
 				display:block;
+				position: relative;
 				color:#777;
 				white-space: nowrap;
 				text-decoration:none;
@@ -722,6 +723,8 @@ A {
 			.sidenav LI A:hover {
 				color:#89c82e;
 				}
+				
+			.sidenav LI A .badge {margin-left: 5px;}
 				
 		.sidenav LI.cur {
 			}
@@ -1087,6 +1090,9 @@ A {
 
 	.history_missed .history__who STRONG {
 		color:#ea3142;
+		}
+	.history_vmail .history__who STRONG {
+		color:#9a57b9;
 		}
 
 			
