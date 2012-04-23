@@ -532,6 +532,9 @@ $(document).ready(function(){
 	
 	/* faq social menu */
 	$('.b-faq_menu_social').css('top', $('.b-faq').height() - $('.b-faq_menu_social').height() - 30);
+	$('.b-faq_menu_item').click(function () {
+		$(this).toggleClass('b-faq_menu_item_active');
+	});
 }); // dom ready
 
 // globals for dropdown timeout

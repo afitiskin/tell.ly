@@ -3782,7 +3782,7 @@ A {
 				.b-settings_list_sublist_arrow i {background: url(../i/sprite.png) no-repeat 0 -13px;width: 16px;height: 43px;display: block;}
 		
 .g-clear {display: block;clear: both;width: 1px;height: 1px;}
-.b-setup_step2 h4, .b-setup_step3 h4 {color: #a7a7a7;font-size: 14px;font-weight: bold;line-height: 17px;margin: 0 0 15px;}
+.b-setup_step2 h4, .b-setup_step3 h4, .b-setup_step4 h4 {color: #a7a7a7;font-size: 14px;font-weight: bold;line-height: 17px;margin: 0 0 15px;font-family: arial,helvetica,sans-serif;}
 h4.b-setup_ready {width: 350px;margin: 0 auto; 15px;color: #a7a7a7;font-size: 24px;font-weight: bold;line-height: 30px;}
 			
 .b-setup_step2 {}
@@ -3818,7 +3818,7 @@ h4.b-setup_ready {width: 350px;margin: 0 auto; 15px;color: #a7a7a7;font-size: 24
 			border-radius: 3px;	
 		}
 		
-.b-setup_step3 h4, .b-setup_step3 form {text-align: center;}
+.b-setup_step3 h4, .b-setup_step4 h4, .b-setup_step3 form, .b-setup_step4 form {text-align: center;}
 	.b-setup_step3_form {position: relative;}
 		.b-setup_step3_form .field {margin: 0 auto 7px;width: 220px;}
 		.b-setup_step3 form .field_textarea textarea {color: #D9D9D9;}

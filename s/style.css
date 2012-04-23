@@ -1582,7 +1582,7 @@ P.q A {
 		}
 			.ie6 .b-faq_menu_ask, .ie7 .b-faq_menu_ask {zoom: 1;}	
 	
-		.b-faq_menu_caption {font-size: 14px;line-height: 14px;font-weight: bold;color: #848484;text-shadow: 0 1px rgba(255, 255, 255, .45);border-top: 1px solid #c8c8c8;border-bottom: 1px solid #c3c3c3;margin: 0;padding: 5px 30px 5px 25px;}
+		.b-faq_menu_caption {font-size: 14px;font-family: arial,helvetica,sans-serif;line-height: 14px;font-weight: bold;color: #848484;text-shadow: 0 1px rgba(255, 255, 255, .45);border-top: 1px solid #c8c8c8;border-bottom: 1px solid #c3c3c3;margin: 0;padding: 5px 30px 5px 25px;}
 		.b-faq_menu_caption {
 			background: #e0e0e0; /* Old browsers */
 			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UwZTBlMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjZmNmY2YiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);/* IE9 SVG, needs conditional override of 'filter' to 'none' */
