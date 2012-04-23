@@ -3796,7 +3796,7 @@ h4.b-setup_ready {width: 350px;margin: 0 auto; 15px;color: #a7a7a7;font-size: 24
 		.b-setup_step2_account_phone {text-align: center;color: #fff;text-shadow: 0 -1px rgba(0, 0, 0, .16);font-size: 16px;}
 		.b-setup_step2_account_phone_caption {font-size: 12px;color: #fff;text-align: center;margin: 0 0 12px;}
 		
-		.b-setup_step2_account_remember {position: absolute;bottom: 10px;left: 10px;width: 93px;height: 17px;background: url(../i/sprite.png) no-repeat 0 -56px;text-decoration: none;}
+		.b-setup_step2_account_remember {position: absolute;bottom: 5px;left: 10px;text-decoration: none;}
 			.b-setup_step2_account_remember span {visibility: hidden;background: #6fb536;color: #fff;text-transform: capitalize;font-size: 10px;}
 
 	.b-setup_step2_cols {overflow: hidden;padding: 0 10px;font-size: 12px;line-height: auto;position: relative;}

@@ -256,7 +256,7 @@
 					
 					<div class="b-setup_step2_cols b-setup_step2_cols_bg">
 						<div class="b-setup_step2_col1"><h4>Your personal <br />SIP account</h4></div>
-						<div class="b-setup_step2_col2">
+						<div class="b-setup_step2_col2" id="evernote_content">
 							<dl>
 								<dt>Server (proxy)</dt>
 								<dd>www.tell.ly</dd>
@@ -271,7 +271,8 @@
 							</dl>
 						</div>
 						
-						<a href="#" class="b-setup_step2_account_remember"><span>remember</span></a>
+						<script type="text/javascript" src="http://static.evernote.com/noteit.js"></script>
+						<a class="b-setup_step2_account_remember" href="#" onclick="Evernote.doClip({contentId:'evernote_content',providerName:'Tell.ly'}); return false;"><img src="http://static.evernote.com/article-clipper-remember.png" alt="Clip to Evernote" /></a>
 					</div>
 				</div><!--popup__section-->
 				<div class="popup__section">

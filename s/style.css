@@ -2062,7 +2062,7 @@ P.q A {
 				.b-landing_text_advantages_caption {color: #adadad;font-size: 12px;display: block;margin: 0 0 0 22px;}
 					.b-landing_text_advantages li {border-bottom: 1px solid #ededed;color: #80b435;font-size: 25px;line-height: 30px;position: relative;padding: 10px 0 12px 65px;}
 						.b-landing_text_advantages li:last-child, .b-landing_text_advantages li.last-child {border-bottom: none;}
-						.b-landing_text_advantages li i {width: 28px;height: 28px;display: block;position: absolute;left: 22px;top: 13px;background: url(../i/sprite.png) no-repeat -705px -32px;}
+						.b-landing_text_advantages li i {width: 28px;height: 28px;display: block;position: absolute;left: 22px;top: 13px;background: url(../i/sprite.png) no-repeat 0 -206px;}
 	
 			.b-landing_col2 {float: right;width: 400px}
 				.b-landing_col2 h3 {color: #8e8e8e;font-size: 25px;line-height: 30px;margin: 0;padding: 0 0 15px;}
