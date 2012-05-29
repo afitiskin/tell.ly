@@ -473,7 +473,7 @@ A:hover {text-decoration:none}
 }
 
 .footer {
-	padding:12px 0 0;
+	padding:12px 0;
 	width:920px;
 	position:relative;
 	font-size:11px;
@@ -1895,7 +1895,7 @@ P.q A {
 				
 				
 	.b-features_signup {position: relative;background: url(../i/features-signup-bg.png) no-repeat 0 0;height: 300px;padding: 10px 20px 20px;font-size: 19px;line-height: 25px;color: #dadada;}			
-		.b-features_signup_form {margin: -3px 0 0;}
+		.b-features_signup_form {margin: -3px 0 0;position: relative;}
 		.b-features_signup p {width: 635px;margin: 18px auto;font-size: 19px;line-height: 25px;color: #dadada;}			
 
 	.b-features_textfield {font-size: 19px;line-height: 19px;padding: 14px 12px 10px;width: 153px;margin: 0 10px 0 0;color: #8e8e8e;background: #343434;border: 1px solid #1f1f1f;}			
@@ -1913,6 +1913,12 @@ P.q A {
 		-moz-box-shadow: 0 0 10px rgba(121, 173, 47, .7);
 		-webkit-box-shadow: 0 0 10px rgba(121, 173, 47, .7);
 		box-shadow: 0 0 10px rgba(121, 173, 47, .7);
+	}
+	.b-features_textfield_error, .b-features_textfield_error:active, .b-features_textfield_error:focus {
+		border-color: rgb(207, 39, 54);		
+		-moz-box-shadow: 0 0 10px rgba(207, 39, 54, .7);
+		-webkit-box-shadow: 0 0 10px rgba(207, 39, 54, .7);
+		box-shadow: 0 0 10px rgba(207, 39, 54, .7);
 	}
 				
 				
@@ -1986,14 +1992,6 @@ P.q A {
 		.b-button30_ask span {padding-left: 15px;}
 		.b-button30_ask i {width: 19px;height: 20px;background: url(../i/sprite.png) no-repeat -429px 0px;}
 	
-.b-bubble {height: 59px;display: inline-block;color: #fff;text-shadow: 0 1px rgba(0, 0, 0, .2);font-size: 12px;line-height: 12px;white-space: nowrap;padding: 0 0 0 40px;cursor: pointer;}
-	.b-bubble span {display: inline-block;height: 50px;padding: 9px 15px 0 0;text-indent: -24px;}
-		
-	.b-bubble_blue {background: url(../i/bubble-blue-left.png) no-repeat 0 0;}
-		.b-bubble_blue span {background: url(../i/bubble-blue-right.png) no-repeat 100% 0;}
-	.b-bubble_blue:hover {background: url(../i/bubble-blue-left.png) no-repeat 0 -59px;}
-		.b-bubble_blue:hover span {background: url(../i/bubble-blue-right.png) no-repeat 100% -59px;}
-
 .b-bubble {position: absolute;text-align: left;height: 59px;display: block;color: #fff;text-shadow: 0 1px rgba(0, 0, 0, .2);font-size: 12px;line-height: 12px;white-space: nowrap;padding: 0 0 0 40px;cursor: pointer;}
 	.b-bubble span {display: block;height: 51px;padding: 8px 15px 0 0;text-indent: -24px;}
 
@@ -2001,6 +1999,8 @@ P.q A {
 		.b-bubble_blue span {background: url(../i/bubble-blue-right.png) no-repeat 100% 0;}
 	.b-bubble_blue:hover {background: url(../i/bubble-blue-left.png) no-repeat 0 -59px;}
 		.b-bubble_blue:hover span {background: url(../i/bubble-blue-right.png) no-repeat 100% -59px;}
+	.b-bubble_red {background: url(../i/bubble-red-left.png) no-repeat 0 0;}
+		.b-bubble_red span {background: url(../i/bubble-red-right.png) no-repeat 100% 0;}
 
 .b-bubble_double {position: absolute;text-align: left;height: 74px;display: block;color: #fff;text-shadow: 0 1px rgba(0, 0, 0, .2);font-size: 12px;line-height: 12px;white-space: nowrap;padding: 0 0 0 40px;cursor: pointer;}
 	.b-bubble_double div {display: block;height: 51px;padding: 23px 18px 0 0;}
@@ -2095,11 +2095,85 @@ P.q A {
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbcbcb', endColorstr='#fefefe',GradientType=0 ); /* IE6-8 */
 		}		
 	
-.b-landing .b-features_signup {text-align: center;}
+.b-landing .b-features_signup, .b-pricing .b-features_signup {text-align: center;}
 
+.b-pricing {padding-bottom: 0;}	
+	.b-pricing_intro {text-align: center;}
+		.b-pricing_header {}
+		.b-pricing_subheader {position: relative;color: #80b435;font-size: 30px;line-height: 30px;display: inline-block;margin: -2px 0 12px;}
+			.b-pricing_subheader_with_sticker {margin-left: -30px;}
+			.b-pricing_subheader_sticker {display: block;position: absolute;width: 85px; height: 80px;background: url(../i/sprite.png) no-repeat -157px -206px;left: 100%;top: 6px;margin: -30px 0 0 -17px;}
+				.b-pricing_subheader_sticker span {visibility: hidden;}
+		.b-pricing_thesis {font-size: 19px;line-height: 19px;margin: 0 0 25px;}
+		
+	.b-pricing_pricetable1 {background: #fafafa;border: 1px solid #e5e5e5;border-radius: 5px;margin: 25px 50px 45px;position: relative;font-size: 22px;line-height: 30px;}
+		.b-pricing_pricetable1_services {float: left;position: relative;}
+			.b-pricing_pricetable1_services ul {height: 259px;overflow: hidden;}
+				.b-pricing_pricetable1_services ul li {position: relative;padding: 18px 135px 16px 61px;border-bottom: 1px solid #e5e5e5;}
+						.b-pricing_pricetable1_services ul li:last-child, .b-pricing_pricetable1_services ul li.b-pricing_pricetable1_services_last {border: none;}
+					.b-pricing_pricetable1_services ul li em {font-style: normal;color: #333333;}
+		
+			.b-pricing_pricetable1_services_icon {width: 32px; height: 33px;display: block;position: absolute;background: url(../i/sprite.png) no-repeat;left: 18px;top: 18px;}
+				.b-pricing_pricetable1_services_icon_outgoing {background-position: -28px -206px;}
+				.b-pricing_pricetable1_services_icon_incoming {background-position: -60px -206px;}
+				.b-pricing_pricetable1_services_icon_sms {background-position: -92px -206px;}
+		
+			.b-pricing_pricetable1_services_arrow {display: block;position: absolute;top: 0;right: 0;width: 93px;height: 259px;background: url(../i/pricing-table1-arrow.png) no-repeat 0 0;}
+		
+		.b-pricing_pricetable1_price {float: left;padding: 50px 0 0 60px;}
+			.b-pricing_pricetable1_price_value {display: block;width: 231px; height: 171px;background: url(../i/sprite.png) no-repeat -244px -142px;}
+				.b-pricing_pricetable1_price_value span {visibility: hidden;font-size: 178px;font-family: 'helvetica neue',helvetica,sans-serif;color: #373737;letter-spacing: -16px;line-height: 136px;white-space: nowrap;}
+					.b-pricing_pricetable1_price_value sup {font-size: 89px;font-family: helvetica,sans-serif;position: relative;top: -77px;left: -14px;}
+		
+		.b-pricing_clear {clear: both;}
+		.b-pricing_pricetable1_signup {position: absolute;top: 237px;left: 590px;}
+
+	.b-pricing_sep {background: url(../i/pricing-block-sep.png) repeat-x 0 0;height: 5px;margin: 0 0 20px;}
+		.b-pricing_sep_or {display: block;position: relative;top: -15px;margin: 0 auto;width: 33px; height: 33px;}
+			.b-pricing_sep_or span {display: block;color: #a3a3a3;font-family: 'helvetica neue',helvetica,sans-serif;font-size: 14px;font-weight: bold;line-height: 14px;background: rgba(181, 181, 181, .3);width: 33px;height: 25px;border-radius: 50%;text-align: center;padding-top: 8px;}
+		
+			.ie7 .b-pricing_sep_or {background: url(../i/sprite.png) no-repeat -124px -206px;}
+			.ie7 .b-pricing_sep_or span {display: none;}
 	
+	.b-pricing_package {text-align: center;}
 	
-	
-	
-	
+	.b-pricing_pricetable2 {text-align: center;background: #fafafa;border: 1px solid #e5e5e5;border-radius: 5px;margin: 25px 50px 45px;position: relative;overflow: hidden;}
+		.b-pricing_pricetable2_item {float: left;border-right: 1px solid #e5e5e5;width: 218px;}
+			.b-pricing_pricetable2_item:last-child, .b-pricing_pricetable2_item_last {border: none;} 
+			.b-pricing_pricetable2_service {font: 48px/30px helveica,sans-serif;color: #424242;padding: 22px 0 10px;border-bottom: 1px solid #e5e5e5;}
+				.b-pricing_pricetable2_service_currency {font: bold 14px/25px arial,sans-serif;color: #a7a7a7;display: block;margin-top: 5px;}
+			.b-pricing_pricetable2_price {margin: 21px 0 29px;display: inline-block;position: relative;} 
+					.b-pricing_pricetable2_price_value {font: 40px/40px arial,sans-serif;color: #80b435;} 
+					.b-pricing_pricetable2_price_currency {position: absolute;font: 20px/20px helvetica,sans-serif;color: #616161;top: 3px;left: -14px;} 
+					.b-pricing_pricetable2_price_buy {position: absolute;font: bold 11px/11px 'Ubuntu',arial,sans-serif;color: #a6a6a6;top: 6px;left: 100%;margin-left: 6px;background: #e0e0e0;text-decoration: none;padding: 1px 9px 4px 8px;border-radius: 9px;}
+
+.b-pricing_features {position: relative;text-align: center;padding: 19px 52px 0;background: #f6f6f6 url(../i/pricing-block-sep.png?v=2) repeat-x 0 0;}
+	.b-pricing_features_header {font-size: 25px;line-height: 30px;}		
+		.b-pricing_features_header em {color: #86c826;}
+
+	.b-pricing_features_list {font-size: 19px;line-height: 20px;border-top: 1px solid #e3e3e3;padding: 19px 0 10px;margin: 19px 0 0;}
+		.b-pricing_features_item {position: relative;display: inline-block;padding-left: 32px;margin: 0 10px 16px;white-space: nowrap;}
+			.b-pricing_features_item i {display: block;position: absolute;width: 22px;height: 22px;background: url(../i/sprite.png) no-repeat -641px -92px;left: 0;top: 0;}
+		
+	.b-pricing_features_notice {position: absolute;left: 52px;font-size: 12px;line-height: 12px;color: #86c826;margin: -26px 0 0 -5px;}
+		.b-pricing_features_notice i {display: block;position: absolute;width: 12px; height: 12px;background: url(../i/sprite.png) no-repeat 0px -258px;left: 100%;top: 0;margin: -11px 0 0 12px;}
+
+.b-features_signup_pricing {height: 265px;border-radius: 0 0 3px 3px;}
+	.b-features_signup_pricing .b-features_signup_button {margin-top: 22px;}
+	.b-features_signup_pricing .b-bubble {cursor: default;display: inline-block;margin: -35px 0 0 -195px;} 
+		
+.b-pricing_faq {padding: 0 50px 50px;background: url(../i/pricing-faq-bg.png) no-repeat 50% 106px;margin: 30px 0 0;}
+	.b-pricing_faq h1 {text-align: center;}
+	.b-pricing_faq h3 {font-size: 22px;margin: 30px 0 0;}
+		.b-pricing_faq h3:first-child {}
+	.b-pricing_faq p {margin: 0 0 22px;line-height: 22px;}
+
+	.b-pricing_faq_cols {overflow: hidden;margin: 25px 0 0;}
+		.b-pricing_faq_col1 {float: left;width: 400px;margin: 0 45px 0 0;}
+		.b-pricing_faq_col2 {float: left;width: 400px;}
+		
+		
+		
+		
+
 	
