@@ -2101,8 +2101,10 @@ P.q A {
 	.b-pricing_intro {text-align: center;}
 		.b-pricing_header {}
 		.b-pricing_subheader {position: relative;color: #80b435;font-size: 30px;line-height: 30px;display: inline-block;margin: -2px 0 12px;}
+			.ie7 .b-pricing_subheader {zoom: 1;display: inline;line-height: 35px;}
 			.b-pricing_subheader_with_sticker {margin-left: -30px;}
 			.b-pricing_subheader_sticker {display: block;position: absolute;width: 85px; height: 80px;background: url(../i/sprite.png) no-repeat -157px -206px;left: 100%;top: 6px;margin: -30px 0 0 -17px;}
+				.ie7 .b-pricing_subheader_sticker {zoom: 1;}
 				.b-pricing_subheader_sticker span {visibility: hidden;}
 		.b-pricing_thesis {font-size: 19px;line-height: 19px;margin: 0 0 25px;}
 		
@@ -2132,8 +2134,8 @@ P.q A {
 		.b-pricing_sep_or {display: block;position: relative;top: -15px;margin: 0 auto;width: 33px; height: 33px;}
 			.b-pricing_sep_or span {display: block;color: #a3a3a3;font-family: 'helvetica neue',helvetica,sans-serif;font-size: 14px;font-weight: bold;line-height: 14px;background: rgba(181, 181, 181, .3);width: 33px;height: 25px;border-radius: 50%;text-align: center;padding-top: 8px;}
 		
-			.ie7 .b-pricing_sep_or {background: url(../i/sprite.png) no-repeat -124px -206px;}
-			.ie7 .b-pricing_sep_or span {display: none;}
+			.ie7 .b-pricing_sep_or, .ie8 .b-pricing_sep_or {background: url(../i/sprite.png) no-repeat -124px -206px;}
+			.ie7 .b-pricing_sep_or span, .ie8 .b-pricing_sep_or span {display: none;}
 	
 	.b-pricing_package {text-align: center;}
 	
@@ -2142,10 +2144,13 @@ P.q A {
 			.b-pricing_pricetable2_item:last-child, .b-pricing_pricetable2_item_last {border: none;} 
 			.b-pricing_pricetable2_service {font: 48px/30px helveica,sans-serif;color: #424242;padding: 22px 0 10px;border-bottom: 1px solid #e5e5e5;}
 				.b-pricing_pricetable2_service_currency {font: bold 14px/25px arial,sans-serif;color: #a7a7a7;display: block;margin-top: 5px;}
-			.b-pricing_pricetable2_price {margin: 21px 0 29px;display: inline-block;position: relative;} 
-					.b-pricing_pricetable2_price_value {font: 40px/40px arial,sans-serif;color: #80b435;} 
+			.b-pricing_pricetable2_price {margin: 21px 0 29px;display: inline-block;position: relative;}
+				.ie7 .b-pricing_pricetable2_price {zoom: 1;display: inline;} 
+					.b-pricing_pricetable2_price_value {font: 40px/40px arial,sans-serif;color: #80b435;}
 					.b-pricing_pricetable2_price_currency {position: absolute;font: 20px/20px helvetica,sans-serif;color: #616161;top: 3px;left: -14px;} 
 					.b-pricing_pricetable2_price_buy {position: absolute;font: bold 11px/11px 'Ubuntu',arial,sans-serif;color: #a6a6a6;top: 6px;left: 100%;margin-left: 6px;background: #e0e0e0;text-decoration: none;padding: 1px 9px 4px 8px;border-radius: 9px;}
+						.ie7 .b-pricing_pricetable2_price_buy {line-height: 13px;top: 4px;}
+						.ie8 .b-pricing_pricetable2_price_buy {line-height: 13px;top: 4px;padding: 1px 9px 1px 8px;}
 
 .b-pricing_features {position: relative;text-align: center;padding: 19px 52px 0;background: #f6f6f6 url(../i/pricing-block-sep.png?v=2) repeat-x 0 0;}
 	.b-pricing_features_header {font-size: 25px;line-height: 30px;}		
@@ -2153,16 +2158,20 @@ P.q A {
 
 	.b-pricing_features_list {font-size: 19px;line-height: 20px;border-top: 1px solid #e3e3e3;padding: 19px 0 10px;margin: 19px 0 0;}
 		.b-pricing_features_item {position: relative;display: inline-block;padding-left: 32px;margin: 0 10px 16px;white-space: nowrap;}
+			.ie7 .b-pricing_features_item {display: inline;zoom: 1;}
 			.b-pricing_features_item i {display: block;position: absolute;width: 22px;height: 22px;background: url(../i/sprite.png) no-repeat -641px -92px;left: 0;top: 0;}
 		
 	.b-pricing_features_notice {position: absolute;left: 52px;font-size: 12px;line-height: 12px;color: #86c826;margin: -26px 0 0 -5px;}
 		.b-pricing_features_notice i {display: block;position: absolute;width: 12px; height: 12px;background: url(../i/sprite.png) no-repeat 0px -258px;left: 100%;top: 0;margin: -11px 0 0 12px;}
 
 .b-features_signup_pricing {height: 265px;border-radius: 0 0 3px 3px;}
+	.ie7 .b-features_signup_pricing {zoom: 1;position: relative;overflow: hidden;margin-bottom: 30px;}
 	.b-features_signup_pricing .b-features_signup_button {margin-top: 22px;}
-	.b-features_signup_pricing .b-bubble {cursor: default;display: inline-block;margin: -35px 0 0 -195px;} 
+	.b-features_signup_pricing .b-bubble {cursor: default;display: inline-block;margin: -35px 0 0 -195px;}
+		.ie7 .b-features_signup_pricing .b-bubble {zoom: 1;display: inline;} 
 		
 .b-pricing_faq {padding: 0 50px 50px;background: url(../i/pricing-faq-bg.png) no-repeat 50% 106px;margin: 30px 0 0;}
+	.ie7 .b-pricing_faq {zoom: 1;}
 	.b-pricing_faq h1 {text-align: center;}
 	.b-pricing_faq h3 {font-size: 22px;margin: 30px 0 0;}
 		.b-pricing_faq h3:first-child {}
