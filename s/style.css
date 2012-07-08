@@ -2194,8 +2194,13 @@ P.q A {
 	.b-mainpage_features_pricing {border: 1px solid #e5e5e5;background: #fafafa;border-radius: 3px;margin: 20px 50px 35px;overflow: hidden;}
 		.b-mainpage_features_pricing_item {float: left;padding: 20px 0 16px;overflow: hidden;width: 175px;border-right: 1px solid #e5e5e5;}
 			.b-mainpage_features_pricing_item:last-child {border-right: none;width: 174px;}
+			.ie7 .b-mainpage_features_pricing_item_last, .ie8 .b-mainpage_features_pricing_item_last {border-right: none;width: 172px;}
+		
+			.ie7 .b-mainpage_features_pricing_item {padding-top: 14px;}
+		
 			.b-mainpage_features_pricing_equal {width: 38px;height: 37px;display: block;position: relative;background: url(../i/sprite.png) no-repeat -28px -239px;float: left;top: 17px;margin: 0 -19px;}
 			.b-mainpage_features_pricing_item strong {display: inline-block;font: 48px/30px helvetica,sans-serif;color: #424242;}	
+				.ie7 .b-mainpage_features_pricing_item strong {line-height: 48px;}
 			.b-mainpage_features_pricing_item sup {font-size: 35px;}
 			.b-mainpage_features_pricing_item small {display: inline-block;font: bold 14px/17px arial,sans-serif;color: #8f8f8f;text-align: left;}	
 
