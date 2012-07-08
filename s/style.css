@@ -1305,8 +1305,10 @@ P.q A {
     background:url('../i/promo-bg.png') 0 0 no-repeat transparent;
     width:937px;
     height:300px;
-    position:relative;
-    margin: 0 auto;
+    position:absolute;
+    margin: 0 27px 0;
+	top: 90px;
+	left: 0;
     z-index:50;
    -webkit-border-radius:3px;
    -moz-border-radius:3px;
@@ -2183,7 +2185,7 @@ P.q A {
 		.b-pricing_faq_col2 {float: left;width: 400px;}
 		
 		
-.b-mainpage_features {position: relative;margin-top: -70px;padding: 70px 0 0;text-align: center;}
+.b-mainpage_features {position: relative;margin-top: 250px;padding: 70px 0 0;text-align: center;}
 	.b-mainpage_features h1 {line-height: 45px;}
 	.b-mainpage_features h3 {font-size: 13px;line-height: 13px;color: #80b435;font-weight: bold;border-top: 1px solid #e5e5e5;margin: 20px 0 0;padding: 0;}
 		.b-mainpage_features h3 span {padding: 0 15px;background: #fff;position: relative;top: -8px;}
